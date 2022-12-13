@@ -9,7 +9,7 @@ const Card = ({meal}) => {
         <h3>{meal.strMeal}</h3>
         <Link to={`/detail/${meal.idMeal}`}>
             <button className='text-white bg-blue-500 py-2 px-10  rounded-xl  absolute bottom-3 right-3'>
-                <BsEye/>
+                <BsEye className=' text-xl'/>
             </button> 
         </Link>
     </div>

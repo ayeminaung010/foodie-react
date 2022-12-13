@@ -6,11 +6,11 @@ import Meals from './Meals'
 import Navbar from './Navbar'
 const App = () => {
   return (
-    <div className='container mx-auto '>
+    <div className='container max-w-6xl mx-auto '>
       <Navbar/>
       <Routes>
         <Route path='/' element={<Meals/>}></Route>
-        <Route path='/detail' element={<Details/>}></Route>
+        <Route path='/detail/:id' element={<Details/>}></Route>
       </Routes>
     </div>
   )
